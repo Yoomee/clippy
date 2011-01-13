@@ -45,14 +45,14 @@ If you want to use Clippy unmodified, just copy `build/clippy.swf` to your
 Installation (Compiling)
 ------------------------
 
-In order to compile Clippy from source, you need [haXe](http://haxe.org/) and [swfmill](http://swfmill.org/). The Mac binaries and haXe library are included in the `bin` directory. There is a bash script `compile.sh` to compile clippy.
+In order to compile Clippy from source, you need [haXe](http://haxe.org/) and [swfmill](http://swfmill.org/). The Mac binaries and haXe library are included in the `bin` directory.
 
 The haXe code is in `clippy.hx`, the button images are in `assets`, and the
 compiler config is in `compile.hxml`. Make sure you look at all of these to
 see where and what you'll need to modify. To compile everything into a final
-SWF, run the following from Clippy's root directory:
+SWF using the local haXe and swfmill binaries, run the following from Clippy's root directory:
 
-    ./compile.sh
+    make
 
 If that is successful, copy `build/clippy.swf` to your
 `public` directory or wherever your static assets can be found.
